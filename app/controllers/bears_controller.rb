@@ -5,6 +5,7 @@ class BearsController < ApplicationController
 
   def show
     @bear = Bear.find(params[:id])
+    render :show
   end
 
   def new
@@ -20,8 +21,24 @@ class BearsController < ApplicationController
     end
   end
 
+  def edit
+    @bear = Bear.find(params[:id])
+  end
 
+  def update
+    @bear= Bear.find(params[:id])
+    if @bear.update(bear_params)
+      redirect_to bears_path
+    else
+      render :edit
+    end
+  end
 
+   def destroy
+     @bear = Bear.find(params[:id])
+     @bear.destroy
+     redirect_to bears_path
+   end
 
 
   private
