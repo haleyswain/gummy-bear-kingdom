@@ -1,24 +1,31 @@
 # README
+## GummyBearsMingle Dating Site
+#### By Haley Swain
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Description
 
-Things you may want to cover:
+* This page utilizes Ruby on Rails to create a simple Gummy Bear Dating Page. Gummy Bear users can create their own profile, as well as view the profiles of other Gummy bears. With a lack of user authenticaiton, currently, all users can edit or delete the profile of any other user.
 
-* Ruby version
+## Setup/Installation Requirements
 
-* System dependencies
+* Clone This Repository
+* navigate to this project directory
+* run bundle install from your terminal
+* run ruby server in the terminal
+* navigate to localhost:3000 in your favorite Web Browser
 
-* Configuration
+## Known Bugs
+* There are no known bugs with this page.
 
-* Database creation
+## Support and contact details
 
-* Database initialization
+In the event of any problems, please contact haley at haleyswain@gmail.com. Contributions to this code are welcomed and encouraged.
 
-* How to run the test suite
+## Technologies Used
+* HTML
+* Ruby/Rails
+* Materialize CSS
 
-* Services (job queues, cache servers, search engines, etc.)
+### License
 
-* Deployment instructions
-
-* ...
+* Copyright (c) 2017 Haley Swain MIT License
