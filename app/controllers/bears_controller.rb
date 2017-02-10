@@ -15,7 +15,7 @@ class BearsController < ApplicationController
   def create
     @bear = Bear.new(bear_params)
     if @bear.save
-      flash[:notice] = "List successfully added!"
+      flash[:notice] = "Profile successfully added!"
       redirect_to  bear_path(@bear)
     else
       render :new

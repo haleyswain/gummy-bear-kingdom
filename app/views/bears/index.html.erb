@@ -1,13 +1,16 @@
 <div class = "content">
 </div>
 
-<div class="container" style="width: 20%; margin-left: auto; margin-right: auto;">
-  <h1>Bears</h1>
-<ul>
-  <% @bears.each do |bear| %>
-  <li><h3><%= link_to bear.name, bear_path(bear) %></li></h3>
-  <% end %>
-</ul>
-  <%= link_to "New Bear", new_bear_path %>
-</div>
+  <div class="container">
+    <h1>GummyBearMingle</h1>
+    <h5>GummyBearMingle is an online dating site aimed at Gummy Bears who are looking for their new life partner! This site allows users to browse other bears' profiles, as well as create their own awesome dating profile! Administrators can view, edit, and remove Gummy Bear Profiles. Good Luck!</h5>
+    <h2><u>Profiles</u></h2>
+    <ul>
+      <% @bears.each do |bear| %>
+      <li><h3><%= link_to bear.name, bear_path(bear) %></li></h3>
+      <% end %>
+    </ul>
+    <button class="waves-effect waves-light btn"><%= link_to "Create My Profile!", new_bear_path %></button>
+    <br>
+  </div>
 </div>
