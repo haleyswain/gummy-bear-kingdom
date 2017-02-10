@@ -44,6 +44,6 @@ class BearsController < ApplicationController
 
   private
   def bear_params
-    params.require(:bear).permit(:name, :cost, :country, :color)
+    params.require(:bear).permit(:name, :cost, :country, :color, :hobby)
   end
 end

@@ -3,4 +3,5 @@ class Bear < ActiveRecord::Base
   validates :cost, :presence => true
   validates :country, :presence => true
   validates :color, :presence => true
+  validates :hobby, :presence => true
 end
