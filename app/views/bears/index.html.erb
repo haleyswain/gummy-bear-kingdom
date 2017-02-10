@@ -1,9 +1,13 @@
-<div class="container">
+<div class = "content">
+</div>
+
+<div class="container" style="width: 20%; margin-left: auto; margin-right: auto;">
   <h1>Bears</h1>
-
+<ul>
   <% @bears.each do |bear| %>
-  <%= link_to bear.name, bear_path(bear) %>
+  <li><h3><%= link_to bear.name, bear_path(bear) %></li></h3>
   <% end %>
-
+</ul>
   <%= link_to "New Bear", new_bear_path %>
+</div>
 </div>

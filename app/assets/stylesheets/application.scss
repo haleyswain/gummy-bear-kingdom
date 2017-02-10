@@ -1,2 +1,22 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import "materialize";
+
+
+.content {
+  background-image: url("http://farm4.staticflickr.com/3769/9234009120_21d69eacee_o.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body {
+  background-color: #7DE88C;
+  text-align: center;
+  align-items: center;
+}
+h1, h2, h3, h4, label {
+  color: white;
+}
