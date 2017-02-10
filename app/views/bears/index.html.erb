@@ -1,7 +1,9 @@
-<h1>Bears</h1>
+<div class="container">
+  <h1>Bears</h1>
 
-<% @bears.each do |bear| %>
-<%= link_to bear.name, bear_path(bear) %>
-<% end %>
+  <% @bears.each do |bear| %>
+  <%= link_to bear.name, bear_path(bear) %>
+  <% end %>
 
-<%= link_to "New Bear", new_bear_path %>
+  <%= link_to "New Bear", new_bear_path %>
+</div>
